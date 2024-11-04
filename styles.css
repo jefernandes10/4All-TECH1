@@ -1,0 +1,127 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; /* Espaço entre logo e navegação */
+    padding: 10px 20px;
+    background: #140028;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    background-color: #575757;
+}
+
+.main {
+    padding: 20px;
+}
+
+.produtos, .portifolio, .admin {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.produto-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.produto-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.portifolio img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.admin ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin ul li button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.admin ul li button:hover {
+    background-color: #d32f2f;
+}
+
+.logo {
+    width: 80px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 15px; /* Espaçamento entre logo e o título */
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.texto, .imagem {
+    width: 45%;
+    max-width: 500px;
+}
+
+.texto h2 {
+    color: #333;
+}
+
+.texto p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 600px) {
+    .produto-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto-item {
+        width: 90%;
+    }
+}
